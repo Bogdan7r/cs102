@@ -66,7 +66,7 @@ def gcd(a, b):
             a = a - b
         else:
             b = b - a        
-    print(a)
+    return a
 
 def multiplicative_inverse(e, phi):
     """
@@ -91,7 +91,7 @@ def multiplicative_inverse(e, phi):
         minimum = y
     else:
         minimum = x
-    print(minimum % maximum)
+    d = (minimum % maximum)
 
 def encrypt(pk, plaintext):
     # Unpack the key into it's components
