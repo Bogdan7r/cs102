@@ -1,6 +1,14 @@
 plaintext = input()
 key = input()
 def  encrypt_vigenere(plaintext, key):
+     """
+     >>> encrypt_vigenere("PYTHON", "A")
+     'PYTHON'
+     >>> encrypt_vigenere("python", "a")
+     'python'
+     >>> encrypt_vigenere("ATTACKATDAWN", "LEMON")
+     'LXFOPVEFRNHR'
+     """
      alfavit = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
      long_plaintext = len(plaintext)
      long_key = len(key)
@@ -35,6 +43,14 @@ encrypt_vigenere(plaintext, key)
 ciphertext = input()
 key = input()
 def  decrypt_vigenere(ciphertext, key):
+     """
+    >>> decrypt_vigenere("PYTHON", "A")
+    'PYTHON'
+    >>> decrypt_vigenere("python", "a")
+    'python'
+    >>> decrypt_vigenere("LXFOPVEFRNHR", "LEMON")
+    'ATTACKATDAWN'
+    """
      alfavit = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
      long_ciphertext = len(ciphertext)
      long_key = len(key)
