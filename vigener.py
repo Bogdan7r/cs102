@@ -36,9 +36,7 @@ def  encrypt_vigenere(plaintext, key):
                 if ((ord(plaintext[t])+k) < 122) and (ord(plaintext[t]) > 90):
                     ciphertext += chr(ord(plaintext[t])+k)
                 t +=1
-     print(ciphertext)
-       
-encrypt_vigenere(plaintext, key)
+     return ciphertext
 
 ciphertext = input()
 key = input()
@@ -78,8 +76,8 @@ def  decrypt_vigenere(ciphertext, key):
                 if ((ord(ciphertext[t])) < 123) and ((ord(ciphertext[t])-k) > 96):
                     plaintext += chr(ord(ciphertext[t])-k)
                 t +=1
-     print(plaintext)
-decrypt_vigenere(ciphertext, key) 
+     return plaintext
+
 
 
 
