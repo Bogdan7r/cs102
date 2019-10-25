@@ -26,8 +26,7 @@ def encrypt_ceasar(plaintext):
                     ciphertext = ciphertext + chr(ord(i)+3)
         else:
             ciphertext = ciphertext + i
-    print(ciphertext) # return ciphertext
-encrypt_ceasar(plaintext)
+    return ciphertext 
 
 ciphertext = input()
 def encrypt_ceasar(ciphertext):
@@ -57,5 +56,5 @@ def encrypt_ceasar(ciphertext):
                     plaintext = plaintext + chr(ord(i)-3)
         else:
             plaintext = plaintext + i
-    print(plaintext) # return plaintext
-encrypt_ceasar(ciphertext)
+    return plaintext 
+
